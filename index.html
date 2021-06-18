@@ -10,15 +10,23 @@
         
         <!-- CSS -->
         <link rel="stylesheet" href="assets/css/base/base.css">
+        <link rel="stylesheet" href="assets/css/componentes/cabecalho.css">
         <link rel="stylesheet" href="assets/css/componentes/botoes.css">
         <link rel="stylesheet" href="assets/css/componentes/input.css">
         <link rel="stylesheet" href="assets/css/componentes/cartao.css">
         <link rel="stylesheet" href="assets/css/componentes/item.css">
         <link rel="stylesheet" href="assets/css/componentes/produto.css">
         <link rel="stylesheet" href="assets/css/componentes/video.css">
+        <link rel="stylesheet" href="assets/css/componentes/rodape.css">
 
     </head>
     <body>
+        <header class="container cabecalho">
+            <img src="assets/img/logo.svg" alt="Logo da casa verde" class="cabecalho__logo">
+            <a href="#" aria-label="Meu Carrinho de compras">
+                <img src="assets/img/icones/carrinho.svg" alt="Icone do carrinho de compras" class="cabecalho__carrinho">
+            </a>
+        </header>
         <main class="container">
             <button class="botao">Assinar Newsletter</button>
             <input type="text" class="input input--icone input--email" placeholder="Insira seu email" aria-label="Insira seu email">
@@ -64,5 +72,31 @@
             </article>
         </main>
 
+        <footer class="container rodape">
+            <img src="assets/img/logo.svg" alt="Logo da casa verde" class="rodape__logo">
+            
+            <ul class="rodape__social">
+                <li><a href="#" class="rodape__social-media"><img title="Facebook" src="assets/img/icones/facebook.svg" 
+                    alt="Icone do facebook"></a></li>
+                <li><a href="#" class="rodape__social-media"><img title="Twitter" src="assets/img/icones/twitter.svg" 
+                    alt="Icone do Twitter"></a></li>
+                <li><a href="#" class="rodape__social-media"><img title="Instagram" src="assets/img/icones/instagram.svg" 
+                    alt="Iconedo Twiter"></a></li>
+            </ul>
+
+            <address class="rodape__unidade texto">
+                <span class="rodape__unidade-titulo">Porto Alegre</span>
+                Rua Siqueira Campos, 171, 303<br>
+                Centro Historico<br>
+                Telefone: (21) 99876-0099
+            </address>
+
+            <address class="rodape__unidade texto">
+                <span class="rodape__unidade-titulo">Viamão</span>
+                Av. Salgado filho, 171, 303<br>
+                Jardim Krahe<br>
+                Telefone: (21) 99846-0084
+            </address>
+        </footer>
     </body>
 </html>
